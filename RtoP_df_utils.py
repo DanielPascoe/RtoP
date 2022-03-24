@@ -31,6 +31,9 @@ def cat_bin(input_vec, f_bins, f_names, do_abs=False):
     else:
         int_vec = input_vec
     output_vec = list(pd.cut(int_vec, bins=f_bins, labels=f_names))
-    
+    print("printing nowt")
     return(output_vec)
+
+def perc_bin(input_vec, perc_bins=[0,0.25,0.50,0.75,1.0]):
+    print("perc_bin not defined yet")
     
